@@ -1,0 +1,51 @@
+/* This dis selecter is just to seee borders while we ptactice layout*/
+div {
+    border: 1px solid rgb(255, 255, 255);
+    }
+    
+    /* This is where the actual layout begins */
+    
+    /* GRID */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 200px 750px 100px;
+    }
+    
+    .top{
+        grid-column: 1/1;
+        grid-row: 1/2;
+        background-color: red;
+        text-align: center;
+        color: white;
+        font: 40px;
+    }
+    
+    .navigation{
+        grid-column: 1/1;
+        grid-row: 2/3;
+        background-color: hwb(86 0% 0%);
+    }
+
+    .main{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        background-color: chocolate;
+        text-align: right;
+        color: rgb(0, 0, 0);
+        padding: right;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+    
+    .footer { 
+        grid-column: 1/3;
+        grid-row: 5/6;
+        background-color: #333; 
+        color: white; 
+        text-align: center; 
+        padding: 10px; 
+        position: relative; 
+        bottom: 0; 
+        width: 100%; 
+        margin-top: 20px; }
